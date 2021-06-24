@@ -1,0 +1,70 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+    "version": "1.0.0",
+    "id": "baa2585b-2ec3-47bb-bd45-748cd9bdf184",
+    "packageName": "com.teams.sample.tranzactBot",
+    "developer": {
+      "name": "tranzactBot",
+      "websiteUrl": "https://www.tranzact.net/",
+      "privacyUrl": "https://www.tranzact.net/privacy",
+      "termsOfUseUrl": "https://www.tranzact.net/termsofuser"
+    },
+    "icons": {
+      "outline": "icon-outline.png",
+      "color": "icon-color.png"
+    },
+    "name": {
+      "short": "tranzactBot",
+      "full": "tranzactBot"
+    },
+    "description": {
+      "short": "tranzactBot",
+      "full": "tranzactBot"
+    },
+    "accentColor": "#FFFFFF",
+    "bots": [
+      {
+        "botId": "baa2585b-2ec3-47bb-bd45-748cd9bdf184",
+        "scopes": [
+          "personal",
+          "groupchat",
+          "team"
+        ],
+        "supportsFiles": false,
+        "isNotificationOnly": false,
+        "commandLists": [
+          {
+            "scopes": [
+              "personal",
+              "groupchat",
+              "team"
+            ],
+            "commands": [
+              {
+                "title": "MentionMe",
+                "description": "Sends message with @mention of the sender"
+              },
+              {
+                "title": "Show Welcome",
+                "description": "Shows the welcome card"
+              },
+              {
+                "title": "MessageAllMembers",
+                "description": "Send 1 to 1 message to all members of the current conversation"
+              },
+              {
+                "title": "helm",
+                "description": "Executes helm command"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "permissions": [
+      "identity",
+      "messageTeamMembers"
+    ],
+    "validDomains": []
+  }
